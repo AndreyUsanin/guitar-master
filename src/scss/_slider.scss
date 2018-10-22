@@ -1,33 +1,4 @@
 
-
-// COLORS
-
-$primary: #00dffc;
-$secondary: #005f6b;
-$aux: #ff4343;
-$white: #ffffff;
-$black: #1a2025;
-$gray: #c4c4c4;
-$light-gray: #e8e9e9;
-$dark-gray: #2a333c;
-
-// BREAKPOINTS
-
-$xl: 1690px;
-$l: 1280px;
-$m: 980px;
-$s: 763px;
-$xs: 480px;
-
-// GLOBAL
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: $black;
-  margin: 0;
-}
-
-
 .main-slider-wrapper {
   min-height: 800px;
   position: relative;
