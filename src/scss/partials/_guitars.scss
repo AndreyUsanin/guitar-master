@@ -2,6 +2,14 @@
   max-width: $l;
   margin: 0 auto;
   padding: 5vw 2vw 0 5vw;
+
+  @media (max-width: $m) {
+    padding: 10vw 2vw 0 2vw;
+  }
+
+  @media (max-width: $s) {
+    padding: 15vw 4vw 0 4vw;
+  }
 }
 
 .guitars {
@@ -21,10 +29,6 @@
       border-radius: 10px;
     }
 
-    &--sm {
-      grid-row: span 1;
-    }
-
     &:nth-child(1) {
       grid-column: 1 / 2;
       grid-row: 1 / 3;
@@ -39,5 +43,39 @@
       grid-column: 2 / 3;
       grid-row: 2 / 4;
     }
+  }
+}
+
+@media (max-width: $s) {
+  .guitars {
+    grid-template-columns: 1fr;
+    grid-auto-flow: dense;
+    grid-gap: 0.5rem;
+    padding: 0 10vw;
+  }
+
+  .guitars__linkbox {
+    grid-column: span 1 !important;
+    grid-row: span 2 !important;
+
+  }
+}
+
+
+// MORE
+
+.guitars--more {
+  display: none;
+
+}
+
+
+.guitars--more.show {
+  margin-top: 2rem;
+  display: grid;
+  @extend .guitars;
+
+  @media (max-width: $s) {
+    margin-top: 1rem;
   }
 }

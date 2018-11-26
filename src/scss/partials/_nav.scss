@@ -27,6 +27,7 @@
 
   }
 
+ 
   &__link {
     padding: 1rem 2rem;
     display: flex;
@@ -74,6 +75,20 @@
   }
 }
 
+.close {
+  padding: 0.75rem;
+  border: none;
+  background: $black;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
+
+  &__icon {
+    color: $white;
+  }
+}
+
 // MEDIA QUARIES
 
 @media (max-width: $s) {
@@ -94,6 +109,7 @@
 
   .navi__list {
      margin-top: 1rem; 
+     flex-direction: column;
   }
 
   .navi__menu   {
@@ -115,4 +131,97 @@
   .navi--top.active ul {
     display: flex;
   }
+}
+
+// OVERLAY
+
+
+.nav-overlay {
+  display: none; // hide it at first
+  z-index: 999; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  box-sizing: border-box;
+  color: white;
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &__link {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    transition: color ease 0.4s;
+    position: relative;
+
+
+    &:hover::after {
+      width: 50%;
+      transition: all .3s;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $primary;
+      height: 4px;
+    }
+
+  }
+}
+
+.nav-overlay.menu-open {
+  display: flex; 
+  background-color: rgba(0, 0, 0, 0.9); 
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.social-overlay {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 2rem;
+
+  &__item {
+    padding: 0 .5rem;
+  }
+
+
+  &__icon {
+    font-size: ms(2);
+  }
+
 }

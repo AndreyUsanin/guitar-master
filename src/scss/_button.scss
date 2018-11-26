@@ -46,6 +46,11 @@
   position: relative;
   text-transform: uppercase;
 
+  &--showmore {
+    color: $black;
+    margin-top: 2rem;
+  }
+
   &--hero {
     margin-top: 2rem;
   }
@@ -62,7 +67,7 @@
 
 .button:hover {
   color: $black;
-  border: 3px solid $primary;
+  border: 3px solid $white;
 }
 
 .button--hero::after {
@@ -77,4 +82,34 @@
   left: 0;
   top: 0;
   width: 100%;
+}
+
+
+.showmore {
+  padding: 1rem 2rem;
+  background: none;
+  border: 3px solid $light-gray;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  color: $black;
+  text-decoration: none;  
+  position: relative;
+  transition: all 0.2s;
+  position: relative;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: ms(-1);
+
+  &:hover {
+    border: 3px solid $black;
+    transition: all 0.2s;
+  }
 }

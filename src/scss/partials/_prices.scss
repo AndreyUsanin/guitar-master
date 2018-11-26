@@ -2,6 +2,14 @@
   max-width: $l;
   margin: 0 auto;
   padding: 5vw 2vw;
+
+  @media(max-width: $m) {
+    padding: 10vw 2vw;
+  }
+
+  @media(max-width: $s) {
+    padding: 15vw 4vw;
+  }
 }
 
 .prices {
