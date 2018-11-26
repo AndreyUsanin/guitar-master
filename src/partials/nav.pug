@@ -1,7 +1,27 @@
-ul
-  li Home
-  li Contact
-  li Lorem ipsum dolor sit amet.
-  li Lorem ipsum dolor sit amet.
-  li Lorem ipsum dolor sit amet.
-  li Lorem ipsum dolor sit amet.
+.navi.navi--top
+  .navi__mobile
+    .logo
+      a(href='#' class="logo__link")
+        img(src='./images/logo.svg' class="logo__img")
+    button.toggle
+      i.fas.fa-bars.toggle__icon
+
+  .navi__menu    
+    ul.navi__list
+      li.navi__item
+        a(href='#guitars' class='navi__link') Мои Работы
+      li.navi__item
+        a(href='#prices' class='navi__link') Цены
+      li.navi__item
+        a(href='#contacts' class='navi__link') Контакты
+
+    ul.social
+      li.social__item
+        a(href='https://vk.com/id155400272' target='_blank' class='social__link') 
+          span.fab.fa-vk.social__icon
+      li.social__item
+        a(href='www.google.com', class='social__link') 
+          span.fab.fa-instagram.social__icon
+      li.social__item
+        a(href='www.google.com', class='social__link') 
+          span.fab.fa-facebook-square.social__icon

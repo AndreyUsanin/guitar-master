@@ -1,0 +1,118 @@
+.navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: $l;
+  margin: auto;
+  background: transparent;
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem;
+  }
+
+  &__item {
+
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__link {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    transition: color ease 0.4s;
+    position: relative;
+
+
+    &:hover::after {
+      width: 50%;
+      transition: all .3s;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: $primary;
+      height: 4px;
+    }
+
+  }
+}
+
+.toggle {
+  display: none;
+  padding: 0.75rem;
+  border: none;
+  background: $black;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+
+  &__icon {
+    color: $white;
+  }
+}
+
+// MEDIA QUARIES
+
+@media (max-width: $s) {
+  .toggle {
+    display: flex;
+  }
+
+  .navi__mobile {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navi--top {
+    flex-wrap: wrap;
+  }
+
+  .navi__list {
+     margin-top: 1rem; 
+  }
+
+  .navi__menu   {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .navi--top ul {
+    flex-direction: column;
+    display: none;
+
+    a {
+      padding: 1.6rem 0;
+    }
+  }
+
+  .navi--top.active ul {
+    display: flex;
+  }
+}

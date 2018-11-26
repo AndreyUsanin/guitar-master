@@ -1,13 +1,14 @@
 // COLORS
 
-$primary: #00dffc;
-$secondary: #005f6b;
+$primary: #e12d1e;
+// $primary: #AD0000;
+$secondary: #f3c563;
 $aux: #f48809;
 $white: #ffffff;
-$black: #0f0f0f;
+$black: #020100;
 $gray: #c4c4c4;
-$light-gray: #e8e9e9;
-$dark-gray: #2a333c;
+$light-gray: #D3D0CB;
+$dark-gray: #26282A;
 
 // BREAKPOINTS
 
@@ -20,7 +21,7 @@ $xs: 480px;
 // BODY
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $black;
   line-height: 1.6;
 }
