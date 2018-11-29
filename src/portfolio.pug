@@ -1,0 +1,90 @@
+- const title = "Гитарный Мастер - Александр Пашенцев | изготовление и ремонт классических и аккустических гитар";
+- let desc = ""
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title #{title}
+    //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css')
+  body
+    block header
+    include ./partials/topnav 
+    .nav-dark-wrp
+      include ./partials/nav      
+      include ./partials/navoverlay
+
+    block content
+    .portfolio-area
+      .portfolio-item    
+        .col__1 
+          .slider(data-name='guitar-01')
+            .slider__slide
+              a(href='./images/guitar-01.jpg' class='slide__linkbox')
+                img(src='./images/guitar-01.jpg')
+            .slider__slide
+              a(href='./images/guitar-03.jpg' class='slide__linkbox')
+                img(src='./images/guitar-03.jpg')
+
+          .slider__guitar-01.slider__thumbnails
+            img(src='./images/guitar-01.jpg', class='slider__thumbnail' alt='')  
+            img(src='./images/guitar-03.jpg', class='slider__thumbnail' alt='')
+        .col__2
+
+
+          h2.guitarinfo__title Гитара из клена 
+          ul.guitarinfo__list
+            li.guitarinfo__item Верхняя дека
+              span Кавказская ель        
+            li.guitarinfo__item Нижняя дека
+              span Клен (вставка нербау)      
+            li.guitarinfo__item Обечайка
+              span Клен     
+            li.guitarinfo__item Гриф 	
+              span Красное дерево       
+            li.guitarinfo__item Накладка 	
+              span Палисандр 	    
+            li.guitarinfo__item Подставка 	
+              span Палисандр       
+            li.guitarinfo__item Количество ладов
+              span 21     
+            li.guitarinfo__item Материал ладов
+              span Нейзильберовая сталь   
+            li.guitarinfo__item Мензура 	
+              span 650мм    
+            li.guitarinfo__item Колки 	
+              span --- 	   
+            li.guitarinfo__item Окантовка	
+              span 	Мореный орех    
+     
+
+
+
+
+      .portfolio-item    
+        .col__1 
+          .slider(data-name='guitar-02')
+            .slider__slide
+              a(href='./images/guitar-05.jpg' class='slide__linkbox')
+                img(src='./images/guitar-05.jpg')
+            .slider__slide
+              a(href='./images/guitar-07.jpg' class='slide__linkbox')
+                img(src='./images/guitar-07.jpg')
+
+          .slider__guitar-02.slider__thumbnails
+            img(src='./images/guitar-01.jpg', class='slider__thumbnail' alt='')  
+            img(src='./images/guitar-03.jpg', class='slider__thumbnail' alt='')
+        .col__2
+        
+
+
+
+    block content
+    include ./partials/footer
+
+    block footer
+    a.back_to_top(title='Наверх')
+      span.fas.fa-arrow-up
+    

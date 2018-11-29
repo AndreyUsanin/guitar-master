@@ -1,4 +1,4 @@
-
+include topnav
 header.hero
   include nav
   .hero__content
@@ -10,28 +10,4 @@ header.hero
 
 
 
-
-.nav-overlay
-  button.close#close
-    i.fas.fa-times.close__icon
-
-  .nav-overlay__menu    
-
-    ul.nav-overlay__list
-      li.nav-overlay__item
-        a(href='#guitars' class='nav-overlay__link') Мои Работы
-      li.nav-overlay__item
-        a(href='#prices' class='nav-overlay__link') Цены
-      li.nav-overlay__item
-        a(href='#contacts' class='nav-overlay__link') Контакты
-
-    ul.social-overlay
-      li.social-overlay__item
-        a(href='https://vk.com/id155400272' target='_blank' class='social__link') 
-          span.fab.fa-vk.social-overlay__icon
-      li.social-overlay__item
-        a(href='https://www.instagram.com/alexandrpashencev/' target='_blank'  class='social__link') 
-          span.fab.fa-instagram.social-overlay__icon
-      li.social-overlay__item
-        a(href='https://ru-ru.facebook.com/alexandr.pashencev' target='_blank' class='social__link') 
-          span.fab.fa-facebook-square.social-overlay__icon
+include navoverlay

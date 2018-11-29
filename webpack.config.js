@@ -109,6 +109,22 @@ module.exports = {
       //   handlebarsLoader: {}
       // }
     }),
+    new HtmlWebpackPlugin({
+      title: "Custom template using Handlebars",
+      template: "src/portfolio.pug",
+      filename: "portfolio.html"
+      // options: {
+      //   handlebarsLoader: {}
+      // }
+    }),
+    new HtmlWebpackPlugin({
+      title: "Custom template using Handlebars",
+      template: "src/zakaz.pug",
+      filename: "zakaz.html"
+      // options: {
+      //   handlebarsLoader: {}
+      // }
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional

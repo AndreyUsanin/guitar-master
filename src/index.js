@@ -4,6 +4,7 @@ import './scss/fonts.css';
 
 // baguetteBox GALLERY
 import baguetteBox from 'baguettebox.js';
+import { tns } from 'tiny-slider';
 
 
 // NAV
@@ -56,6 +57,7 @@ document.getElementById("close").addEventListener("click", MenuOff, true);
 
 baguetteBox.run('.guitars');
 baguetteBox.run('.guitars--more');
+baguetteBox.run('.slider__slide');
 
 
 // SHOWMORE
@@ -74,9 +76,9 @@ function showMore() {
   }
 }
 
-
-showMoreBtn.addEventListener("click", showMore, true);
-
+if(showMoreBtn && moreContainer) {
+  showMoreBtn.addEventListener("click", showMore, true);
+}
 
 
 // scroll to top
@@ -112,3 +114,44 @@ showMoreBtn.addEventListener("click", showMore, true);
   goTopBtn.addEventListener('click', backToTop);
 })();
 /* end begin Back to Top button  */
+
+
+var forEach = function (array, callback, scope) {
+  for (var i = 0; i < array.length; i++) {
+    callback.call(scope, i, array[i]); // passes back stuff we need
+  }
+};
+
+
+// tiny-slider initialisation
+var sliders = document.querySelectorAll('.slider');
+forEach(sliders, function (index, value) {
+  // now fetch YOUR-SLUG from html (use value.getAttribute('data-name') for < IE10 support)
+  let thumbnail = value.dataset.name;
+  let slider = tns({
+    container: value,
+    navContainer: '.slider__' + thumbnail,
+    navAsThumbnails: true,
+    "controls": false,
+    "items": 1
+    // more options ..
+  });
+})
+
+
+// Simple sticky nav in plain JS
+// p.s. this is just a short example, you should remember to debounce the scroll event ;-)
+if ("addEventListener" in window && "classList" in document.documentElement) {
+
+  var element = document.querySelector(".topnav-area"),
+    offset = element.offsetTop;
+
+  window.addEventListener("scroll", function() {
+    if (offset < window.pageYOffset) {
+      element.classList.add("fixed");
+    } else {
+      element.classList.remove("fixed");
+    }
+  }, false);
+
+}

@@ -1,0 +1,52 @@
+- const title = "Гитарный Мастер - Александр Пашенцев | изготовление и ремонт классических и аккустических гитар";
+- let desc = ""
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title #{title}
+    //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css')
+  body
+    block header
+    include ./partials/topnav 
+    .nav-dark-wrp
+      include ./partials/nav      
+      include ./partials/navoverlay
+
+    block content
+    section.zakaz
+      .zakaz__img 
+        img(src='./images/dostavka.jpg')
+
+      .zakaz__info
+        .zakaz__item
+          .zakaz__iconbox
+             span.far.fa-envelope.zakaz__icon
+          .zakaz__info
+            h2.zakaz__title Доставка
+            span.zakaz-title__separator 
+            p Доставка товара осуществляется в любой город России. По тарифам транспортной компании. Бесплатная доставка  производится при заказе на сумму более 50 000 р.   
+        .zakaz__item
+          .zakaz__iconbox
+             span.fas.fa-credit-card.zakaz__icon
+          .zakaz__info
+            h2.zakaz__title Заказ и предоплата
+            span.zakaz-title__separator 
+            p Заказчик вносит предоплату 30%, если не оговорены другие условия. Далее в течение оговоренного срока я выполняю работы. 
+
+
+
+
+
+
+
+    block content
+    include ./partials/footer
+
+    block footer
+    a.back_to_top(title='Наверх')
+      span.fas.fa-arrow-up
+    

@@ -1,0 +1,52 @@
+.topnav {
+  max-width: $l;
+  padding: 1rem;
+  max-width: $l;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: $white;
+    
+
+  &__item {
+    margin-right: 2rem;
+
+    @media(max-width: $s) {
+      
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    margin-left: auto;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &__phone {
+    font-weight: bold;
+  }
+
+  &__icon {
+    color: $black;
+    margin-right: .5rem;
+  }
+}
+
+
+.topnav-area {
+  background: $white;
+}
+
+.topnav-area.fixed {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+}

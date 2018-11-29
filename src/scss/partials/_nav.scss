@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem 0;
   max-width: $l;
   margin: auto;
   background: transparent;
@@ -152,6 +152,8 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    min-height: 100%;
+    min-width: 100%;
   }
 
   &__list {
@@ -179,6 +181,21 @@
     &:hover::after {
       width: 50%;
       transition: all .3s;
+    }
+
+    &:focus::after {    
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 50%;
+      content: '.';
+      color: transparent;
+      background: $primary;
+      height: 4px;
+    
     }
 
     &::after {
@@ -219,9 +236,14 @@
     padding: 0 .5rem;
   }
 
-
   &__icon {
     font-size: ms(2);
   }
 
+}
+
+
+// DARK
+.nav-dark-wrp {
+  background: $black;
 }
