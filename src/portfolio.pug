@@ -17,21 +17,37 @@ html(lang='en')
       include ./partials/navoverlay
 
     block content
+       
     .portfolio-area
       .portfolio-item    
-        .col__1 
-          .slider(data-name='guitar-01')
-            .slider__slide
-              a(href='./images/guitar-01.jpg' class='slide__linkbox')
-                img(src='./images/guitar-01.jpg')
-            .slider__slide
-              a(href='./images/guitar-03.jpg' class='slide__linkbox')
-                img(src='./images/guitar-03.jpg')
+        .slider__content
 
           .slider__guitar-01.slider__thumbnails
-            img(src='./images/guitar-01.jpg', class='slider__thumbnail' alt='')  
-            img(src='./images/guitar-03.jpg', class='slider__thumbnail' alt='')
-        .col__2
+            img(src='../images/guitar-portfolio-01a.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-01b.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-01c.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-01d.jpg', class='slider__thumbnail' alt='')  
+
+
+          .slider(data-name='guitar-01')
+            .slider__slide
+              a(href='./images/guitar-portfolio-01a.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-01a.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-01b.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-01b.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-01c.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-01c.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-01d.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-01d.jpg')
+
+
+
+          
+        .slider__info
+
 
 
           h2.guitarinfo__title Гитара из клена 

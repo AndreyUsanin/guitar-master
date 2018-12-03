@@ -12,6 +12,7 @@
 
   @media (max-width: $s) {
     padding: 15vw 4vw;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -23,6 +24,8 @@
 
   img {
     max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
 
