@@ -1,7 +1,7 @@
 .portfolio-area {
   max-width: $l;
   margin: 0 auto;
-  padding: 5vw 2vw;
+  padding: 2vw;
 
   @media (max-width: $m) {
     padding: 10vw 2vw;
@@ -14,11 +14,11 @@
 
 .portfolio-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 4fr;
   grid-gap: 2rem;
   margin-bottom: 5vw;
 
-  @media (max-width: $s) {
+  @media (max-width: $m) {
     grid-template-columns: 1fr;
   }
 }
@@ -70,6 +70,13 @@
 .guitarinfo {
   &__title {
     font-size: ms(2);
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+
+    @media(max-width: $s) {
+      font-size: ms(1);
+    }
   }
 
   &__list {
@@ -83,14 +90,19 @@
     justify-content: space-between;
     font-size: ms(0);
     border-bottom: 1px solid $light-gray;
-    padding: 0.8rem 0;
+    padding: 0.4rem 1rem;
+    
+    &:hover {
+      background: lighten($light-gray, 15%);
+      transition: all ease .2s;
+    }
 
     span {
       text-align: left;
     }
 
     @media (max-width: $m) {
-      font-size: ms(1) / 1.2;
+      font-size: ms(-1);
     }
   }
 }

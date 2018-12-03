@@ -1,5 +1,10 @@
 - const title = "Гитарный Мастер - Александр Пашенцев | изготовление и ремонт классических и аккустических гитар";
 - let desc = ""
+- let indexLink = "./"
+- let portfolioLink = "./portfolio.html"
+- let zakazLink = "./zakaz.html"
+- let priceLink = "./index.html#prices"
+- let contactsLink = "./#contacts"
 
 doctype html
 html(lang='en')
@@ -17,11 +22,11 @@ html(lang='en')
       include ./partials/navoverlay
 
     block content
-    section.guitars-area#guitars
+    .portfolio-area
       h1.section-title  выполненные
         span.section-title__accent работы
-      span.section-title__separator 
-    .portfolio-area
+        span.section-title__separator 
+      //- GUITAR 1
       .portfolio-item    
         .slider__content
 
@@ -50,53 +55,228 @@ html(lang='en')
 
           
         .slider__info
-
-
-
-          h2.guitarinfo__title Гитара из клена 
+          h2.guitarinfo__title Гитара из мадагаскарского палисандра
           ul.guitarinfo__list
             li.guitarinfo__item Верхняя дека
-              span Кавказская ель        
+              span Альпийская ель       
             li.guitarinfo__item Нижняя дека
-              span Клен (вставка нербау)      
-            li.guitarinfo__item Обечайка
-              span Клен     
+              span Мадагаскарский палисандр    
+            li.guitarinfo__item Обечайки
+              span Мадагаскарский палисандр   
             li.guitarinfo__item Гриф 	
-              span Красное дерево       
-            li.guitarinfo__item Накладка 	
-              span Палисандр 	    
-            li.guitarinfo__item Подставка 	
-              span Палисандр       
-            li.guitarinfo__item Количество ладов
-              span 21     
-            li.guitarinfo__item Материал ладов
-              span Нейзильберовая сталь   
-            li.guitarinfo__item Мензура 	
-              span 650мм    
-            li.guitarinfo__item Колки 	
-              span --- 	   
+              span Американский орех       
+            li.guitarinfo__item Вставка в гриф  	
+              span Черное дерево   
+            li.guitarinfo__item Накладка на головку грифа	
+              span Черное дерево      
+            li.guitarinfo__item Накладка
+              span Черное дерево    
+            li.guitarinfo__item Подставка
+              span Мадагаскарский палисандр  
+            li.guitarinfo__item Количество ладов  	
+              span 19    
+            li.guitarinfo__item Материал ладов  	
+              span Нейзильберовая сталь	   
+            li.guitarinfo__item Мензура	
+              span 	650 мм    
             li.guitarinfo__item Окантовка	
-              span 	Мореный орех    
-     
+              span 	Мадагаскарский палисандр    
+            li.guitarinfo__item Армрест	
+              span 	Черное дерево   
+            li.guitarinfo__item Финишная отделка 	
+              span 	полиуретановый лак    
+            li.guitarinfo__item Струны 	
+              span Savarez
 
 
-
-
+      //- GUITAR 2
       .portfolio-item    
-        .col__1 
-          .slider(data-name='guitar-02')
-            .slider__slide
-              a(href='./images/guitar-05.jpg' class='slide__linkbox')
-                img(src='./images/guitar-05.jpg')
-            .slider__slide
-              a(href='./images/guitar-07.jpg' class='slide__linkbox')
-                img(src='./images/guitar-07.jpg')
+        .slider__content
 
           .slider__guitar-02.slider__thumbnails
-            img(src='./images/guitar-01.jpg', class='slider__thumbnail' alt='')  
-            img(src='./images/guitar-03.jpg', class='slider__thumbnail' alt='')
-        .col__2
-        
+            img(src='../images/guitar-portfolio-02a.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-02b.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-02c.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-02d.jpg', class='slider__thumbnail' alt='')  
+
+
+          .slider(data-name='guitar-02')
+            .slider__slide
+              a(href='./images/guitar-portfolio-02a.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-02a.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-02b.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-02b.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-02c.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-02c.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-02d.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-02d.jpg')
+
+
+
+          
+        .slider__info
+          h2.guitarinfo__title Гитара из мадагаскарского палисандра
+          ul.guitarinfo__list
+            li.guitarinfo__item Верхняя дека
+              span Канадский кедр      
+            li.guitarinfo__item Нижняя дека
+              span Мадагаскарский палисандр    
+            li.guitarinfo__item Обечайки
+              span Мадагаскарский палисандр   
+            li.guitarinfo__item Гриф 	
+              span Американский орех       
+            li.guitarinfo__item Вставка в гриф  	
+              span Черное дерево   
+            li.guitarinfo__item Накладка на головку грифа	
+              span Черное дерево      
+            li.guitarinfo__item Накладка
+              span Черное дерево    
+            li.guitarinfo__item Подставка
+              span Черное дерево  
+            li.guitarinfo__item Количество ладов  	
+              span 19    
+            li.guitarinfo__item Материал ладов  	
+              span Нейзильберовая сталь	   
+            li.guitarinfo__item Мензура	
+              span 	650 мм    
+            li.guitarinfo__item Окантовка	
+              span 	Мадагаскарский палисандр    
+            li.guitarinfo__item Армрест	
+              span 	Черное дерево   
+            li.guitarinfo__item Финишная отделка 	
+              span 	полиуретановый лак    
+            li.guitarinfo__item Струны 	
+              span Savarez
+
+      //- GUITAR 3
+      .portfolio-item    
+        .slider__content
+
+          .slider__guitar-03.slider__thumbnails
+            img(src='../images/guitar-portfolio-03a.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-03b.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-03c.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-03d.jpg', class='slider__thumbnail' alt='')  
+
+
+          .slider(data-name='guitar-03')
+            .slider__slide
+              a(href='./images/guitar-portfolio-03a.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-03a.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-03b.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-03b.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-03c.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-03c.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-03d.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-03d.jpg')
+
+
+
+          
+        .slider__info
+          h2.guitarinfo__title Гитара из бразильского палисандра Рио 
+          ul.guitarinfo__list
+            li.guitarinfo__item Верхняя дека
+              span Альпийская ель   
+            li.guitarinfo__item Нижняя дека
+              span Бразильский палисандр Рио   
+            li.guitarinfo__item Обечайки
+              span Бразильский палисандр Рио   
+            li.guitarinfo__item Гриф 	
+              span Палисандр       
+            li.guitarinfo__item Вставка в гриф  	
+              span Палисандр и клен   
+            li.guitarinfo__item Накладка на головку грифа	
+              span Черное дерево      
+            li.guitarinfo__item Накладка
+              span Черное дерево    
+            li.guitarinfo__item Подставка
+              span Черное дерево  
+            li.guitarinfo__item Количество ладов  	
+              span 19    
+            li.guitarinfo__item Материал ладов  	
+              span Нейзильберовая сталь	   
+            li.guitarinfo__item Мензура	
+              span 	650 мм    
+            li.guitarinfo__item Окантовка	
+              span 	Бразильский  палисандр Рио    
+            li.guitarinfo__item Армрест	
+              span 	Черное дерево   
+            li.guitarinfo__item Финишная отделка 	
+              span 	полиуретановый лак    
+            li.guitarinfo__item Струны 	
+              span Savarez
+
+      //- GUITAR 4
+      .portfolio-item    
+        .slider__content
+
+          .slider__guitar-04.slider__thumbnails
+            img(src='../images/guitar-portfolio-04a.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-04b.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-04c.jpg', class='slider__thumbnail' alt='')  
+            img(src='../images/guitar-portfolio-04d.jpg', class='slider__thumbnail' alt='')  
+
+
+          .slider(data-name='guitar-04')
+            .slider__slide
+              a(href='./images/guitar-portfolio-04a.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-04a.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-04b.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-04b.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-04c.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-04c.jpg')
+            .slider__slide
+              a(href='./images/guitar-portfolio-04d.jpg' class='slide__linkbox')
+                img(src='./images/guitar-portfolio-04d.jpg')
+
+
+
+          
+        .slider__info
+          h2.guitarinfo__title Гитара из волнистого клена  
+          ul.guitarinfo__list
+            li.guitarinfo__item Верхняя дека
+              span Альпийская ель   
+            li.guitarinfo__item Нижняя дека
+              span Волнистый клен  
+            li.guitarinfo__item Обечайки
+              span Волнистый клен   
+            li.guitarinfo__item Гриф 	
+              span Клен       
+            li.guitarinfo__item Вставка в гриф  	
+              span Палисандр   
+            li.guitarinfo__item Накладка на головку грифа	
+              span Палисандр      
+            li.guitarinfo__item Накладка
+              span Палисандр    
+            li.guitarinfo__item Подставка
+              span Палисандр  
+            li.guitarinfo__item Количество ладов  	
+              span 19    
+            li.guitarinfo__item Материал ладов  	
+              span Нейзильберовая сталь	   
+            li.guitarinfo__item Мензура	
+              span 	650 мм    
+            li.guitarinfo__item Окантовка	
+              span 	Палисандр   
+            li.guitarinfo__item Армрест	
+              span 	Палисандр   
+            li.guitarinfo__item Финишная отделка 	
+              span 	полиуретановый лак    
+            li.guitarinfo__item Струны 	
+              span Savarez
+
+
+
 
 
 

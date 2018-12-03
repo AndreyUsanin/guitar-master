@@ -62,23 +62,23 @@ baguetteBox.run('.slider__slide');
 
 // SHOWMORE
 
-let showMoreBtn = document.querySelector('.showmore');
-let moreContainer = document.querySelector('.guitars--more')
+// let showMoreBtn = document.querySelector('.showmore');
+// let moreContainer = document.querySelector('.guitars--more')
 
 
 
-function showMore() {
-  moreContainer.classList.toggle("show");
-  if (moreContainer.classList.contains('show')){
-    showMoreBtn.innerHTML = "свернуть"
-  } else {
-    showMoreBtn.innerHTML = "показать еще"
-  }
-}
+// function showMore() {
+//   moreContainer.classList.toggle("show");
+//   if (moreContainer.classList.contains('show')){
+//     showMoreBtn.innerHTML = "свернуть"
+//   } else {
+//     showMoreBtn.innerHTML = "показать еще"
+//   }
+// }
 
-if(showMoreBtn && moreContainer) {
-  showMoreBtn.addEventListener("click", showMore, true);
-}
+// if(showMoreBtn && moreContainer) {
+//   showMoreBtn.addEventListener("click", showMore, true);
+// }
 
 
 // scroll to top

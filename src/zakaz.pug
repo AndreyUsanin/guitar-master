@@ -1,5 +1,10 @@
 - const title = "Гитарный Мастер - Александр Пашенцев | изготовление и ремонт классических и аккустических гитар";
 - let desc = ""
+- let indexLink = "./"
+- let portfolioLink = "./portfolio.html"
+- let zakazLink = "./zakaz.html"
+- let priceLink = "./index.html#price"
+- let contactsLink = "./#contacts"
 
 doctype html
 html(lang='en')
@@ -8,7 +13,6 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title #{title}
-    //- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css')
   body
     block header
     include ./partials/topnav 
@@ -28,7 +32,7 @@ html(lang='en')
           .zakaz__info
             h2.zakaz__title Доставка
             span.zakaz-title__separator 
-            p Доставка товара осуществляется в любой город России. По тарифам транспортной компании. Бесплатная доставка  производится при заказе на сумму более 50 000 р.   
+            p Доставка осуществляется в любой город Россиии по тарифам транспортной компании. Гитара упаковывается в водонепроницаемую жесткую упаковку и страхуется на стоимость самой гитары. Бесплатная доставка производится при заказе на сумму  более 70000 р. 
         .zakaz__item
           .zakaz__iconbox
              span.fas.fa-credit-card.zakaz__icon

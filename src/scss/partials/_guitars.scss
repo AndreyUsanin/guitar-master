@@ -44,6 +44,12 @@
       grid-row: 2 / 4;
     }
   }
+
+
+  &__button {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: $s) {
@@ -64,18 +70,18 @@
 
 // MORE
 
-.guitars--more {
-  display: none;
+// .guitars--more {
+//   display: none;
 
-}
+// }
 
 
-.guitars--more.show {
-  margin-top: 2rem;
-  display: grid;
-  @extend .guitars;
+// .guitars--more.show {
+//   margin-top: 2rem;
+//   display: grid;
+//   @extend .guitars;
 
-  @media (max-width: $s) {
-    margin-top: 1rem;
-  }
-}
+//   @media (max-width: $s) {
+//     margin-top: 1rem;
+//   }
+// }

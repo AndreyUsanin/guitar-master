@@ -29,7 +29,7 @@
 
   &__item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-size: ms(1);
     border-bottom: 1px solid $light-gray;
     padding: 1.5rem;
@@ -44,10 +44,19 @@
     }
   }
 
+  &__sort {
+    
+  }
+
+  &__sort-item {
+    display: flex;
+    padding: 1rem 0;
+  }
+
   em {
     font-style: normal;
     padding: 0 .5rem;
-    font-size: ms(1);
+    font-size: ms(3);
     color: $black;
   }
 
@@ -60,9 +69,9 @@
 }
 
 @media(max-width: $m) {
-  .prices__item {
+  .prices__sort-item {
     h3 {
-      font-size: ms(1);
+      font-size: ms(0);
     }
   }
 
@@ -78,17 +87,33 @@
     align-items: center;
 
     h3 {
-      font-size: ms(2);
-      padding: 1rem 0;
+      font-size: ms(1);
+      padding: 0;
       text-align: center;
+    }
+
+    .prices__sort-item {
+      align-items: center;
+      flex-direction: column;
     }
   }
 
   .prices__value {
     margin-left: 0;
+    background: $secondary;
+    padding: 1rem;
+    color: $white;
+    margin-top: 1rem;
+
+    em {
+      font-size: ms(2);
+    }
   }
 
   .prices img {
     margin: 0;
   }
 }
+
+
+
