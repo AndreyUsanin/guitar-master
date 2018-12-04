@@ -4,18 +4,18 @@
   padding: 2vw;
 
   @media (max-width: $m) {
-    padding: 10vw 2vw;
+    padding: 5vw 2vw;
   }
 
   @media (max-width: $s) {
-    padding: 15vw 4vw;
+    padding: 10vw 4vw;
   }
 }
 
 .portfolio-item {
   display: grid;
   grid-template-columns: 3fr 4fr;
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   margin-bottom: 5vw;
 
   @media (max-width: $m) {
@@ -24,12 +24,11 @@
 }
 
 .slider {
-  
   &__content {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-content: center;
   }
-
 
   &__slide {
     img {
@@ -60,7 +59,6 @@
   }
 }
 
-
 .slider__thumbnails .tns-nav-active {
   border: 2px solid $secondary;
 }
@@ -74,7 +72,7 @@
     margin-bottom: 1rem;
     padding: 0;
 
-    @media(max-width: $s) {
+    @media (max-width: $s) {
       font-size: ms(1);
     }
   }
@@ -91,10 +89,10 @@
     font-size: ms(0);
     border-bottom: 1px solid $light-gray;
     padding: 0.4rem 1rem;
-    
+
     &:hover {
       background: lighten($light-gray, 15%);
-      transition: all ease .2s;
+      transition: all ease 0.2s;
     }
 
     span {
@@ -106,8 +104,3 @@
     }
   }
 }
-
-
-
-
-
