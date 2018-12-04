@@ -20,7 +20,7 @@ let cleanOptions = {
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "index.js",
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, "dist")
   },
 
@@ -128,7 +128,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "[name].css",
+      filename: "[name].[contenthash].css",
       chunkFilename: "[id].css"
     }),
     new CleanWebpackPlugin('dist/', cleanOptions),

@@ -27,18 +27,19 @@ html(lang='en')
       h1.section-title  выполненные
         span.section-title__accent работы
         span.section-title__separator 
+
       //- GUITAR 1
       .portfolio-item    
         .slider__content
 
-          .slider__guitar-01.slider__thumbnails
+          .slider__guitar-00.slider__thumbnails
             img(src='../images/guitar-portfolio-thumb-01a.jpg', class='slider__thumbnail' alt='')  
             img(src='../images/guitar-portfolio-thumb-01b.jpg', class='slider__thumbnail' alt='')  
             img(src='../images/guitar-portfolio-thumb-01c.jpg', class='slider__thumbnail' alt='')  
             img(src='../images/guitar-portfolio-thumb-01d.jpg', class='slider__thumbnail' alt='')  
 
 
-          .slider(data-name='guitar-01')
+          .slider(data-name='guitar-00')
             .slider__slide
               a(href='./images/guitar-portfolio-01a.jpg' class='slide__linkbox')
                 img(src='./images/guitar-portfolio-01a.jpg')
@@ -66,6 +67,9 @@ html(lang='en')
               span Мадагаскарский палисандр   
             li.guitarinfo__item Гриф 	
               span Американский орех       
+
+
+          ul.guitarinfo__list.hidden(style="list-style: none")
             li.guitarinfo__item Вставка в гриф  	
               span Черное дерево   
             li.guitarinfo__item Накладка на головку грифа	
@@ -88,6 +92,16 @@ html(lang='en')
               span 	полиуретановый лак    
             li.guitarinfo__item Струны 	
               span Savarez
+
+          button(class="toggler") показать все характеристики
+
+          .download
+            span.download__icon.fas.fa-file-download
+            span Все фотографии этого инструмента в высоком разрешении, вы можете скачать 
+            a(href="./guitar-1.zip" class="download__link")  по ссылке
+
+
+
 
 
       //- GUITAR 2
@@ -129,6 +143,8 @@ html(lang='en')
               span Мадагаскарский палисандр   
             li.guitarinfo__item Гриф 	
               span Американский орех       
+
+          ul.guitarinfo__list.hidden(style="list-style: none")    
             li.guitarinfo__item Вставка в гриф  	
               span Черное дерево   
             li.guitarinfo__item Накладка на головку грифа	
@@ -151,6 +167,14 @@ html(lang='en')
               span 	полиуретановый лак    
             li.guitarinfo__item Струны 	
               span Savarez
+
+          button(class="toggler") показать все характеристики
+
+          .download
+            span.download__icon.fas.fa-file-download
+            span Все фотографии этого инструмента в высоком разрешении, вы можете скачать 
+            a(href="./guitar-2.zip" class="download__link")  по ссылке
+
 
       //- GUITAR 3
       .portfolio-item    
@@ -191,6 +215,8 @@ html(lang='en')
               span Бразильский палисандр Рио   
             li.guitarinfo__item Гриф 	
               span Палисандр       
+
+          ul.guitarinfo__list.hidden-item.hidden(style="list-style: none")        
             li.guitarinfo__item Вставка в гриф  	
               span Палисандр и клен   
             li.guitarinfo__item Накладка на головку грифа	
@@ -213,6 +239,14 @@ html(lang='en')
               span 	полиуретановый лак    
             li.guitarinfo__item Струны 	
               span Savarez
+
+          button(class="toggler") показать все характеристики
+
+          .download
+            span.download__icon.fas.fa-file-download
+            span Все фотографии этого инструмента в высоком разрешении, вы можете скачать 
+            a(href="./guitar-3.zip" class="download__link")  по ссылке
+
 
       //- GUITAR 4
       .portfolio-item    
@@ -253,6 +287,8 @@ html(lang='en')
               span Волнистый клен   
             li.guitarinfo__item Гриф 	
               span Клен       
+
+          ul.guitarinfo__list.hidden-item.hidden(style="list-style: none")      
             li.guitarinfo__item Вставка в гриф  	
               span Палисандр   
             li.guitarinfo__item Накладка на головку грифа	
@@ -276,6 +312,12 @@ html(lang='en')
             li.guitarinfo__item Струны 	
               span Savarez
 
+          button(class="toggler") показать все характеристики
+
+          .download
+            span.download__icon.fas.fa-file-download
+            span Все фотографии этого инструмента в высоком разрешении, вы можете скачать 
+            a(href="./guitar-4.zip" class="download__link")  по ссылке
 
 
 

@@ -17,17 +17,26 @@
   grid-template-columns: 3fr 4fr;
   grid-gap: 3rem;
   margin-bottom: 5vw;
+  align-items: start;
 
   @media (max-width: $m) {
     grid-template-columns: 1fr;
+    margin-bottom: 15vw;
   }
 }
 
 .slider {
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-content: center;
+  }
+
+
+  &__info {
+    display: flex;
+    flex-direction: column;
   }
 
   &__slide {
@@ -79,6 +88,8 @@
 
   &__list {
     list-style: none;
+    list-style-image: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
   }
@@ -90,6 +101,7 @@
     border-bottom: 1px solid $light-gray;
     padding: 0.4rem 1rem;
 
+
     &:hover {
       background: lighten($light-gray, 15%);
       transition: all ease 0.2s;
@@ -99,8 +111,43 @@
       text-align: left;
     }
 
-    @media (max-width: $m) {
+    @media (max-width: $s) {
       font-size: ms(-1);
     }
+  }
+
+}
+
+// SHOWMORE TOGGLER
+
+.hidden {
+  display: none;
+}
+
+.toggler {
+  background: none;
+  margin: 1rem 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  font-size: ms(-1);
+  text-decoration: underline;
+}
+
+
+.download {
+  background: lighten($light-gray, 15%);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__link {
+    color: $black;
   }
 }

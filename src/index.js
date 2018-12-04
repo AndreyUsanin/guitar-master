@@ -51,7 +51,7 @@ function MenuOff() {
 // event listeners
 
 document.querySelector(".toggle").addEventListener("click", MenuOn, true);
-document.getElementById("close").addEventListener("click", MenuOff, true);  	
+document.getElementById("close").addEventListener("click", MenuOff, true);
 
 // GALLERY
 
@@ -81,12 +81,33 @@ baguetteBox.run('.slider__slide');
 // }
 
 
+// SHOWMORE 2
+
+const togglers = document.querySelectorAll('.toggler');
+console.log(togglers);
+
+togglers.forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    //const content = el.innerHTML;
+    //console.log(content);
+    el.previousElementSibling.classList.toggle('hidden');
+
+    if (el.previousElementSibling.classList.contains('hidden')){
+      el.innerHTML = "показать все характеристики"
+    } else {
+      el.innerHTML = "свернуть"
+    }
+
+  })
+});
+
+
 // scroll to top
 
 /** Scroll to top button implementation in vanilla JavaScript (ES6 - ECMAScript 6) **/
 
 /* begin begin Back to Top button  */
-(function() {
+(function () {
   'use strict';
 
   function trackScroll() {
@@ -146,7 +167,7 @@ if ("addEventListener" in window && "classList" in document.documentElement) {
   var element = document.querySelector(".topnav-area"),
     offset = element.offsetTop;
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (offset < window.pageYOffset) {
       element.classList.add("fixed");
     } else {
