@@ -5103,8 +5103,10 @@ input {
   .topnav__item {
     margin-right: 2rem; }
     @media (max-width: 763px) {
-      .topnav__item:first-child {
-        display: none; } }
+      .topnav__item {
+        margin: 0; }
+        .topnav__item:first-child {
+          display: none; } }
   .topnav__right {
     margin-left: auto; }
   .topnav a {

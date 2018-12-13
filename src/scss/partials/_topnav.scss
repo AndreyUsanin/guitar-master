@@ -12,7 +12,9 @@
     margin-right: 2rem;
 
     @media(max-width: $s) {
-      
+
+      margin: 0;
+
       &:first-child {
         display: none;
       }
