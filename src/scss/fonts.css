@@ -34,6 +34,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 .icon-cert:before {
   content: "\e900";
 }
@@ -42,4 +43,52 @@
 }
 .icon-wood:before {
   content: "\e902";
+}
+.icon-envelope-o:before {
+  content: "\f003";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
+.icon-arrow-up:before {
+  content: "\f062";
+}
+.icon-facebook-square:before {
+  content: "\f082";
+}
+.icon-credit-card:before {
+  content: "\f09d";
+}
+.icon-truck:before {
+  content: "\f0d1";
+}
+.icon-mobile:before {
+  content: "\f10b";
+}
+.icon-mobile-phone:before {
+  content: "\f10b";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-file-archive-o:before {
+  content: "\f1c6";
+}
+.icon-file-zip-o:before {
+  content: "\f1c6";
+}
+.icon-facebook-official:before {
+  content: "\f230";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-instagram:before {
+  content: "\ea92";
 }
